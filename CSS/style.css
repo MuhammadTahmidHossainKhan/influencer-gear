@@ -1,83 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@900&display=swap');
-*{
-    margin:0;
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@900&display=swap");
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+html {
     scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-body{
-    font-family:'Lora', serif;
+body {
+    font-family: "Lora", serif;
+    max-width: 1200px;
 }
 
 /*==========common css====================================================*/
 
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
 }
-.primary-button{
+.container .menu {
+    display: none;
+}
+.primary-button {
     outline: 0;
     border: 0;
     padding: 10px 20px;
-    background-image: linear-gradient(90deg, #c21273,#FF008E);
+    background-image: linear-gradient(90deg, #c21273, #ff008e);
     color: #fff;
     font-size: 16px;
     text-transform: uppercase;
     border-radius: 20px;
     cursor: pointer;
-    box-shadow:0 7px 0 #a5075e ;
+    box-shadow: 0 7px 0 #a5075e;
     position: relative;
     top: 0;
 }
-.primary-button:active{
+.primary-button:active {
     top: 5px;
-    box-shadow:0 2px 0 #a5075e ;
+    box-shadow: 0 2px 0 #a5075e;
 }
-.section-title{
+.section-title {
     text-align: center;
 }
 
-nav{ 
+nav {
     display: flex;
     justify-content: space-between;
     height: 80px;
     align-items: center;
 }
-.navigation{
+.navigation {
     display: flex;
 }
-.navigation li{
+.navigation li {
     list-style: none;
     margin: 10px;
 }
-.navigation li a{
-    text-decoration:none;
+.navigation li a {
+    text-decoration: none;
     color: black;
     font-weight: 600;
-    padding:15px 10px;
+    padding: 15px 10px;
 }
-.banner{
+.banner {
     height: calc(100vh- 80px);
     min-height: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.banner-left{
+.banner-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
-.banner-right{
+.banner-right {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.banner-right img{
+.banner-right img {
     width: 75%;
 }
 
@@ -108,7 +116,7 @@ nav{
     display: flex;
     flex-direction: column;
     margin: 10px;
-    box-shadow: -1px 1px 8px 2px rgba(0,0,0,0.15);
+    box-shadow: -1px 1px 8px 2px rgba(0, 0, 0, 0.15);
     padding: 10px;
     justify-content: center;
     border-radius: 5px;
@@ -155,7 +163,7 @@ nav{
 
 .popular-collection-container .see-more {
     text-decoration: none;
-    color: #FF008E;
+    color: #ff008e;
     margin-right: 20px;
     margin-bottom: 20px;
 }
@@ -184,6 +192,87 @@ footer .social-icon {
     padding: 5px 10px;
     border-radius: 20px;
     color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation li {
+        margin: 5px;
+    }
+
+    .navigation li a {
+        padding: 0;
+    }
+
+    .popular-collections {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .container .menu {
+        display: block;
+    }
+
+    .container .text {
+        flex: 1;
+        text-align: center;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .navigation li {
+        display: none;
+    }
+
+    .navigation li:last-child {
+        display: block;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-left {
+        order: 1;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-right {
+        width: 75%;
+    }
+
+    .logos img {
+        margin: 5px;
+        width: 48px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logos-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logos-container hr {
+        display: none;
+    }
+
+    .logos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .popular-collections {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Feature part css*/
