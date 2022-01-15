@@ -92,4 +92,67 @@ nav{
     width: 48px;
 }
 
+.popular-collection-container h2 {
+    margin: 20px;
+    width: calc(100% - 40px);
+    text-align: center;
+}
+
+.popular-collections {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 15px;
+}
+
+.popular-collection {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    box-shadow: -1px 1px 8px 2px rgba(0,0,0,0.15);
+    padding: 10px;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.popular-collection img {
+    width: 100%;
+    height: 75%;
+    margin-bottom: 5px;
+}
+
+.popular-collection .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.popular-collection .price {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.popular-collection .stars {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.popular-collection .stars p,
+.popular-collection .text {
+    font-size: 12px;
+}
+
+.popular-collection .stars svg {
+    color: orange;
+    width: 16px;
+}
+
+.popular-collection-container .see-more {
+    float: right;
+    text-decoration: none;
+    color: #FF008E;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
 /* Feature part css*/
