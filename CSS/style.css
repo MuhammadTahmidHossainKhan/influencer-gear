@@ -81,4 +81,15 @@ nav{
     width: 75%;
 }
 
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos img {
+    margin: 10px 15px;
+    width: 48px;
+}
+
 /* Feature part css*/
