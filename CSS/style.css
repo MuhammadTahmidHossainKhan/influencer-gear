@@ -75,7 +75,7 @@ nav{
 .banner-right{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 .banner-right img{
     width: 75%;
@@ -147,12 +147,43 @@ nav{
     width: 16px;
 }
 
+.popular-collection-container .link-container {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
 .popular-collection-container .see-more {
-    float: right;
     text-decoration: none;
     color: #FF008E;
     margin-right: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #0a0826;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+footer .social-icons {
+    display: flex;
+}
+
+footer .social-icon {
+    margin: 5px;
+    background-color: #10233f;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
 }
 
 /* Feature part css*/
