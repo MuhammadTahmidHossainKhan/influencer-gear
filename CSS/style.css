@@ -168,6 +168,30 @@ nav {
     margin-bottom: 20px;
 }
 
+.featured {
+    display: flex;
+    margin: 10px 20px;
+    align-items: center;
+}
+
+.featured .image {
+    margin: 0 20px;
+}
+
+.featured .content {
+    margin: 0 20px;
+}
+
+.featured .content a {
+    background: #ff008e;
+    color: white;
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 5px 0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
 footer {
     background-color: #0a0826;
     color: white;
